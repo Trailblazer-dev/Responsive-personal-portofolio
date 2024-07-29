@@ -40,3 +40,33 @@ const scrollActive = () => {
   });
 };
 window.addEventListener("scroll", scrollActive);
+
+// SCROLL REVEAL
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  reset: true,
+  grabCursor:true,
+  duration: 2000,
+});
+
+sr.reveal('.home__title',{})
+sr.reveal('.button',{delay:200})
+sr.reveal('.home__image',{delay:400})
+sr.reveal('.home__social-icon',{interval:200})
+
+sr.reveal('.about__image',{})
+sr.reveal('.about__subtitle',{delay:200})
+
+sr.reveal('.about__text',{delay:400})
+
+
+sr.reveal('.skills__subtitle',{})
+sr.reveal('.skills__text',{delay:200})
+sr.reveal('.skills__data',{interval:200})
+sr.reveal('.skills__img',{interval:400})
+
+sr.reveal('.work__img',{interval:200})
+
+sr.reveal('.contact__input',{interval:200})
